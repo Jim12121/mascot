@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orkie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function copyCA() {
+        const text = document.getElementById("ca-text").innerText;
+        navigator.clipboard.writeText(text);
+        alert("CA address copied to clipboard!");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="site-title">
+        <img src="logo.jpg" alt="Logo" class="logo" />
+        Orkie
+          </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="text-box-centered">
+        <h1 class="title">
+          Journey to the Moon
+        </h1>
+
+        <p class="description">The truth is plain:</p>
+        <p class="description">When bots win, Solana loses.</p>
+        <p class="description">Orkie is the rise of human will on Solana.</p>
+        <p class="description">It marks the beginning of the end of bots dominance.</p>
+        <p class="description">The era of bots is over —</p>
+        <p class="description">Now it's time to fight for our own</p>
+
+        <div class="ca-copy">
+          <span id="ca-text">0x812Ba41e071C7b7fA4EBcFB62dF5F45f6fA853Ee</span>
+          <button onclick="copyCA()">Copy</button>
+            </main>
+  </body>
+</html>

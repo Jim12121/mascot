@@ -1,0 +1,102 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+  background-image: url("背景2.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 头部导航栏 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.site-title .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.nav-links img {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+/* 中间主要内容，左半侧垂直居中 */
+.main-content {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 100px); /* 留出顶部 header 空间 */
+  padding-left: 4rem;
+}
+
+.text-box-centered {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* 文字内容整体右移两个字符（与标题错位） */
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0.4rem 0;
+  margin-left: 2ch; /* ⬅️ 实现向右偏移两个字符宽度 */
+}
+
+/* CA区域 */
+.ca-copy {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.ca-copy button {
+  background-color: #2563eb;
+  border: none;
+  padding: 0.3rem 0.75rem;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ca-copy button:hover {
+  background-color: #1d4ed8;
+}
+
+/* 底部 logo 图片现在放到 CA 下方 */
+.logo-bottom {
+  width: 4cm;
+  height: 4cm;
+  border-radius: 50%;
+}
